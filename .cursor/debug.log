@@ -1,0 +1,13 @@
+{"timestamp": 1771232719.339871, "location": "import anthropic.py", "hypothesisId": "H1", "message": "api_key after load", "data": {"key_len": 125, "key_prefix": "sk-cp-Q2", "key_suffix": "0gXE"}}
+{"timestamp": 1771232719.34008, "location": "import anthropic.py", "hypothesisId": "H2", "message": "env cleared", "data": {"cleared": []}}
+{"timestamp": 1771232719.3401868, "location": "import anthropic.py", "hypothesisId": "H5", "message": "before native check", "data": {"base_url": "https://api.minimaxi.com/anthropic", "use_com": true, "native_host": "api.minimaxi.com"}}
+{"timestamp": 1771232720.209919, "location": "import anthropic.py", "hypothesisId": "H1", "message": "native check result", "data": {"ok": true, "err_preview": ""}}
+{"timestamp": 1771232720.210382, "location": "import anthropic.py", "hypothesisId": "H2", "message": "Anthropic client args", "data": {"base_url": "https://api.minimaxi.com/anthropic", "api_key_len": 125, "use_auth_token": true}}
+{"timestamp": 1771232720.270358, "location": "import anthropic.py", "hypothesisId": "H4", "message": "before messages.create"}
+{"timestamp": 1771232720.815286, "location": "import anthropic.py", "hypothesisId": "H4", "message": "messages.create failed", "data": {"type": "AuthenticationError", "message": "Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid api key'}, 'request_id': '05e210d544af0a14cc8f634e09685f52'}"}}
+{"timestamp": 1771232768.288687, "location": "import anthropic.py", "hypothesisId": "H1", "message": "api_key after load", "data": {"key_len": 125, "key_prefix": "sk-cp-Q2", "key_suffix": "0gXE"}}
+{"timestamp": 1771232768.288925, "location": "import anthropic.py", "hypothesisId": "H2", "message": "env cleared", "data": {"cleared": []}}
+{"timestamp": 1771232768.2890098, "location": "import anthropic.py", "hypothesisId": "H5", "message": "before native check", "data": {"base_url": "https://api.minimax.io/anthropic", "use_com": false, "native_host": "api.minimax.io"}}
+{"timestamp": 1771232770.189433, "location": "import anthropic.py", "hypothesisId": "H1", "message": "native check result", "data": {"ok": true, "err_preview": ""}}
+{"timestamp": 1771232770.1902761, "location": "import anthropic.py", "hypothesisId": "H2", "message": "Anthropic client args", "data": {"base_url": "https://api.minimax.io/anthropic", "api_key_len": 125, "use_auth_token": true}}
+{"timestamp": 1771232770.244714, "location": "import anthropic.py", "hypothesisId": "H4", "message": "before messages.create"}

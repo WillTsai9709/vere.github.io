@@ -1,0 +1,4 @@
+# 含 API Key 的環境腳本，勿提交
+set_minimax_env.sh
+.env
+.env.local
