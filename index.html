@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary Meta Tags -->
-    <title>VERE | 獨立音樂人 - Indie Artist & Singer-Songwriter</title>
-    <meta name="title" content="VERE | 獨立音樂人 - Indie Artist & Singer-Songwriter">
-    <meta name="description" content="在城市的角落裡，用音樂記錄生活的點滴。每一首歌都是一段故事，每一個音符都承載著真實的情感。聆聽 VERE 的獨立音樂作品。">
-    <meta name="keywords" content="VERE, 獨立音樂, indie music, singer-songwriter, 創作歌手, 獨立歌手, 台灣音樂">
+    <title>VERE | Indie Artist × Music Producer</title>
+    <meta name="title" content="VERE | Indie Artist × Music Producer">
+    <meta name="description" content="VERE — 獨立音樂人，也是製作人。創作自己的歌，也為其他人的故事編曲與混音。在城市的角落裡，用音樂記錄生活。">
+    <meta name="keywords" content="VERE, 獨立音樂, indie music, singer-songwriter, 創作歌手, music producer, mixing, arrangement, 編曲, 混音, 製作人">
     <meta name="author" content="VERE">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourusername.github.io/artist-website/">
-    <meta property="og:title" content="VERE | 獨立音樂人 - Indie Artist & Singer-Songwriter">
-    <meta property="og:description" content="在城市的角落裡，用音樂記錄生活的點滴。每一首歌都是一段故事，每一個音符都承載著真實的情感。">
-    <meta property="og:image" content="https://yourusername.github.io/artist-website/images/og-image.jpg">
+    <meta property="og:url" content="https://willtsai9709.github.io/">
+    <meta property="og:title" content="VERE | Indie Artist × Music Producer">
+    <meta property="og:description" content="VERE — 獨立音樂人，也是製作人。創作自己的歌，也為其他人的故事編曲與混音。">
+    <meta property="og:image" content="https://willtsai9709.github.io/images/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourusername.github.io/artist-website/">
-    <meta property="twitter:title" content="VERE | 獨立音樂人 - Indie Artist & Singer-Songwriter">
-    <meta property="twitter:description" content="在城市的角落裡，用音樂記錄生活的點滴。每一首歌都是一段故事，每一個音符都承載著真實的情感。">
-    <meta property="twitter:image" content="https://yourusername.github.io/artist-website/images/og-image.jpg">
+    <meta property="twitter:url" content="https://willtsai9709.github.io/">
+    <meta property="twitter:title" content="VERE | Indie Artist × Music Producer">
+    <meta property="twitter:description" content="VERE — 獨立音樂人，也是製作人。創作自己的歌，也為其他人的故事編曲與混音。">
+    <meta property="twitter:image" content="https://willtsai9709.github.io/images/og-image.jpg">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -34,18 +34,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://yourusername.github.io/artist-website/">
+    <link rel="canonical" href="https://willtsai9709.github.io/">
     
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#FAF8F5">
+    <!-- Theme Color (will be updated by JS on mode toggle) -->
+    <meta name="theme-color" content="#FAF8F5" id="theme-color-meta">
     
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://unpkg.com">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Playfair Display (Artist) + Space Grotesk (Producer) + Noto Serif TC (中文) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- AOS Library for scroll animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -60,9 +60,9 @@
         "@type": "MusicGroup",
         "name": "VERE",
         "alternateName": "VERE Music",
-        "description": "獨立音樂人，創作歌手",
+        "description": "獨立音樂人，創作歌手，音樂製作人",
         "genre": ["Indie", "Singer-Songwriter"],
-        "url": "https://yourusername.github.io/artist-website/",
+        "url": "https://willtsai9709.github.io/",
         "sameAs": [
             "https://instagram.com/your_username",
             "https://facebook.com/your_page",
@@ -76,7 +76,7 @@
     }
     </script>
 </head>
-<body class="loading">
+<body class="loading" data-mode="artist">
     <!-- Loading Screen -->
     <div class="loader">
         <div class="loader-text">LOADING...</div>
@@ -87,8 +87,8 @@
     <div class="cursor-follower"></div>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <!-- Social Media Links (Top) -->
+    <section id="hero" class="hero" data-show="both">
+        <!-- Social Media Links (Top Right) -->
         <div class="hero-social-links" data-aos="fade-down" data-aos-delay="400">
             <a href="https://instagram.com/your_username" class="hero-social-link" target="_blank" rel="noopener" aria-label="Instagram">
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -116,10 +116,37 @@
             <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1200" data-parallax="20">
                 VERE
             </h1>
-            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                Indie Artist / Singer-Songwriter
+            
+            <!-- Dual Subtitles (one shown per mode) -->
+            <p class="hero-subtitle hero-subtitle-artist" data-show="artist" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                Indie Artist · 創作歌手
             </p>
-            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
+            <p class="hero-subtitle hero-subtitle-producer" data-show="producer" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                Producer · Mixing · Arrangement
+            </p>
+            
+            <!-- Mode Toggle Switch -->
+            <div class="mode-toggle-wrapper" data-aos="fade-up" data-aos-delay="500">
+                <button class="mode-toggle" id="modeToggle" aria-label="Switch between Artist and Producer mode">
+                    <span class="mode-label mode-label-artist">ARTIST</span>
+                    <span class="mode-switch">
+                        <span class="mode-switch-track"></span>
+                        <span class="mode-switch-knob"></span>
+                    </span>
+                    <span class="mode-label mode-label-producer">PRODUCER</span>
+                </button>
+                <!-- First visit tooltip (shown by JS) -->
+                <div class="mode-tooltip" id="modeTooltip">
+                    Try switching →
+                </div>
+            </div>
+            
+            <!-- Producer-only CTA -->
+            <a href="#inquiry" class="hero-cta-producer" data-show="producer" data-aos="fade-up" data-aos-delay="700">
+                Let's Make Something →
+            </a>
+            
+            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="800">
                 <span>Scroll Down</span>
                 <div class="scroll-arrow"></div>
             </div>
@@ -127,15 +154,22 @@
         <div class="hero-overlay"></div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- ================================================ -->
+    <!-- ARTIST MODE SECTIONS                              -->
+    <!-- ================================================ -->
+
+    <!-- About Section (Artist only) -->
+    <section id="about" class="about" data-show="artist">
         <div class="container">
             <div class="about-wrapper">
                 <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
-                    <img src="images/profile.jpg" alt="Artist Profile" class="profile-img">
+                    <img src="images/profile.jpg" alt="VERE Profile" class="profile-img">
                 </div>
                 <div class="about-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                    <h2 class="section-title">About Me</h2>
+                    <h2 class="section-title section-title-bilingual">
+                        <span class="title-en">ABOUT</span>
+                        <span class="title-zh">— 一些關於我的事</span>
+                    </h2>
                     <p class="about-text typewriter">
                         In the corners of the city, I use music to record the nuances of life.
                         Each song is a story, and each note carries real emotions.
@@ -146,10 +180,13 @@
         </div>
     </section>
 
-    <!-- Music Section -->
-    <section id="music" class="music">
+    <!-- Listen Section (Artist only, was "Music") -->
+    <section id="listen" class="music" data-show="artist">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">MUSIC</h2>
+            <h2 class="section-title section-title-bilingual" data-aos="fade-up">
+                <span class="title-en">LISTEN</span>
+                <span class="title-zh">— 聽一段，剛剛好的距離</span>
+            </h2>
             
             <div class="music-platforms" data-aos="fade-up" data-aos-delay="200">
                 <a href="#" class="platform-link" target="_blank" rel="noopener" data-aos="zoom-in" data-aos-delay="300">
@@ -182,28 +219,29 @@
                 <a href="#" class="platform-link" target="_blank" rel="noopener" data-aos="zoom-in" data-aos-delay="600">
                     <div class="platform-icon soundcloud">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c-.009-.06-.049-.1-.099-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c.014.057.045.094.09.094s.089-.037.099-.094l.194-1.308-.194-1.332c-.01-.057-.044-.094-.09-.094m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.104.106.104.061 0 .12-.044.12-.104l.24-2.458-.24-2.563c0-.06-.059-.104-.12-.104m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.138l.225-2.544-.225-2.64c-.015-.075-.075-.135-.15-.135m.93-.585c-.089 0-.165.075-.165.165l-.18 3.225.195 2.57c0 .09.075.165.165.165.089 0 .165-.075.18-.165l.21-2.57-.21-3.225c-.015-.09-.091-.165-.18-.165m1.005-.045c-.104 0-.195.09-.195.195l-.165 3.27.18 2.535c0 .105.09.195.195.195.104 0 .194-.09.194-.195l.195-2.535-.195-3.27c0-.105-.09-.195-.194-.195m1.02.285c-.12 0-.21.089-.225.209l-.15 2.985.165 2.505c.015.12.105.21.225.21.12 0 .21-.09.225-.21l.18-2.505-.18-2.985c-.015-.12-.105-.21-.225-.21m1.065-.405c-.135 0-.24.105-.24.24l-.12 3.15.135 2.46c0 .135.105.24.24.24.135 0 .24-.105.24-.24l.149-2.46-.149-3.15c0-.135-.105-.24-.24-.24m1.005.015c-.149 0-.27.12-.27.27l-.12 3.135.135 2.43c0 .15.12.27.27.27.149 0 .27-.12.27-.27l.15-2.43-.15-3.135c0-.15-.121-.27-.27-.27m1.095.27c-.165 0-.285.12-.285.285l-.105 2.865.12 2.385c0 .165.12.285.285.285.165 0 .285-.12.3-.285l.135-2.385-.135-2.865c-.015-.165-.135-.285-.3-.285m1.02-.06c-.18 0-.315.135-.315.315l-.105 2.61.12 2.34c0 .18.135.315.315.315.18 0 .315-.135.315-.315l.135-2.34-.135-2.61c0-.18-.135-.315-.315-.315m1.095-.015c-.195 0-.345.15-.345.345l-.09 2.28.105 2.295c0 .195.15.345.345.345.195 0 .345-.15.345-.345l.12-2.295-.12-2.28c0-.195-.15-.345-.345-.345m1.155-.51c-.21 0-.375.165-.375.375l-.09 2.79.09 2.25c.015.21.165.375.375.375.21 0 .375-.165.39-.375l.105-2.25-.105-2.79c-.015-.21-.18-.375-.39-.375m1.065.195c-.225 0-.39.165-.405.39l-.075 2.205.09 2.19c.015.24.18.405.405.405.225 0 .405-.165.405-.405l.105-2.19-.105-2.205c0-.225-.18-.39-.405-.39m1.11-.225c-.24 0-.42.18-.435.42l-.06 2.01.075 2.145c.015.255.195.435.435.435.24 0 .42-.18.435-.435l.09-2.145-.09-2.01c-.015-.24-.195-.42-.435-.42m3.525 2.43c-.24 0-.465-.03-.675-.09l-.06 2.295c.015.255.195.435.435.435.24 0 .42-.18.435-.435l.09-2.145c-.075 0-.15-.06-.225-.06m-2.4-2.355c-.255 0-.45.195-.465.45l-.06 1.995.075 2.1c.015.27.21.465.465.465.255 0 .45-.195.465-.465l.09-2.1-.09-1.995c-.015-.255-.21-.45-.465-.45m1.08-.06c-.27 0-.48.21-.495.48l-.045 2.055.06 2.055c.015.285.225.495.495.495.27 0 .48-.21.495-.495l.075-2.055-.075-2.055c-.015-.27-.225-.48-.495-.48m3.765 2.73c-.495-.18-.78-.405-.78-.96 0-.495.255-1.155 1.62-1.155.495 0 1.065.12 1.065.12v1.2s-.57-.15-1.005-.15c-.48 0-.615.165-.615.375 0 .27.27.375.66.525.645.24 1.14.525 1.14 1.14 0 .735-.555 1.26-1.71 1.26-.66 0-1.26-.195-1.26-.195V16.2s.6.21 1.23.21c.525 0 .72-.195.72-.435 0-.315-.315-.435-.795-.615m3.405-1.77h.93v-.885h-.93v-1.35h-1.14v1.35h-.45v.885h.45v2.205c0 .975.45 1.38 1.305 1.38.315 0 .555-.045.555-.045v-.945s-.135.015-.285.015c-.375 0-.435-.165-.435-.465V13.38m3.225-.96c-1.005 0-1.77.825-1.77 2.055s.765 2.055 1.77 2.055c1.005 0 1.77-.825 1.77-2.055s-.765-2.055-1.77-2.055m0 3.18c-.465 0-.66-.495-.66-1.125s.195-1.125.66-1.125c.465 0 .66.495.66 1.125s-.195 1.125-.66 1.125"/>
+                            <path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c-.009-.06-.049-.1-.099-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c.014.057.045.094.09.094s.089-.037.099-.094l.194-1.308-.194-1.332c-.01-.057-.044-.094-.09-.094m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.104.106.104.061 0 .12-.044.12-.104l.24-2.458-.24-2.563c0-.06-.059-.104-.12-.104m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.138l.225-2.544-.225-2.64c-.015-.075-.075-.135-.15-.135m.93-.585c-.089 0-.165.075-.165.165l-.18 3.225.195 2.57c0 .09.075.165.165.165.089 0 .165-.075.18-.165l.21-2.57-.21-3.225c-.015-.09-.091-.165-.18-.165m1.005-.045c-.104 0-.195.09-.195.195l-.165 3.27.18 2.535c0 .105.09.195.195.195.104 0 .194-.09.194-.195l.195-2.535-.195-3.27c0-.105-.09-.195-.194-.195m1.02.285c-.12 0-.21.089-.225.209l-.15 2.985.165 2.505c.015.12.105.21.225.21.12 0 .21-.09.225-.21l.18-2.505-.18-2.985c-.015-.12-.105-.21-.225-.21m1.065-.405c-.135 0-.24.105-.24.24l-.12 3.15.135 2.46c0 .135.105.24.24.24.135 0 .24-.105.24-.24l.149-2.46-.149-3.15c0-.135-.105-.24-.24-.24m1.005.015c-.149 0-.27.12-.27.27l-.12 3.135.135 2.43c0 .15.12.27.27.27.149 0 .27-.12.27-.27l.15-2.43-.15-3.135c0-.15-.121-.27-.27-.27m1.095.27c-.165 0-.285.12-.285.285l-.105 2.865.12 2.385c0 .165.12.285.285.285.165 0 .285-.12.3-.285l.135-2.385-.135-2.865c-.015-.165-.135-.285-.3-.285m1.02-.06c-.18 0-.315.135-.315.315l-.105 2.61.12 2.34c0 .18.135.315.315.315.18 0 .315-.135.315-.315l.135-2.34-.135-2.61c0-.18-.135-.315-.315-.315m1.095-.015c-.195 0-.345.15-.345.345l-.09 2.28.105 2.295c0 .195.15.345.345.345.195 0 .345-.15.345-.345l.12-2.295-.12-2.28c0-.195-.15-.345-.345-.345"/>
                         </svg>
                     </div>
                     <span>SoundCloud</span>
                 </a>
             </div>
             
-            <!-- Spotify Embed -->
+            <!-- Spotify Embed Placeholder -->
             <div class="spotify-embed" data-aos="fade-up" data-aos-delay="400">
                 <p class="embed-placeholder">
-                    <!-- 在這裡嵌入你的 Spotify 播放器 -->
-                    <!-- 從 Spotify 複製嵌入碼，替換此區塊 -->
                     <span class="placeholder-text">🎵 Spotify Player</span>
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Visual Section -->
-    <section id="visual" class="visual">
+    <!-- Visual Section (Artist only) -->
+    <section id="visual" class="visual" data-show="artist">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">MEDIA</h2>
+            <h2 class="section-title section-title-bilingual" data-aos="fade-up">
+                <span class="title-en">VISUAL</span>
+                <span class="title-zh">— 影像，與音樂同行</span>
+            </h2>
             
             <div class="gallery" data-aos="fade-up" data-aos-delay="200">
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
@@ -222,28 +260,268 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- ================================================ -->
+    <!-- PRODUCER MODE SECTIONS                            -->
+    <!-- ================================================ -->
+
+    <!-- Services Section (Producer only) -->
+    <section id="services" class="services" data-show="producer">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Contact</h2>
+            <h2 class="section-title section-title-bilingual" data-aos="fade-up">
+                <span class="title-en">SERVICES</span>
+                <span class="title-zh">— 我能幫你做什麼</span>
+            </h2>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-number">01</div>
+                    <h3 class="service-title">
+                        <span class="service-title-en">MIXING</span>
+                        <span class="service-title-zh">混音</span>
+                    </h3>
+                    <p class="service-description">
+                        讓每個元素找到它的位置。清晰度、平衡感、情緒深度，把你的作品推到發行級別。
+                    </p>
+                    <ul class="service-list">
+                        <li>Vocal tuning & timing</li>
+                        <li>EQ / Compression / Reverb</li>
+                        <li>Mastering-ready delivery</li>
+                    </ul>
+                    <a href="#inquiry" class="service-cta">INQUIRE →</a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-number">02</div>
+                    <h3 class="service-title">
+                        <span class="service-title-en">ARRANGEMENT</span>
+                        <span class="service-title-zh">編曲</span>
+                    </h3>
+                    <p class="service-description">
+                        從一段 demo 或和弦出發，為你的歌找到最適合的聲響、配器與情緒走向。
+                    </p>
+                    <ul class="service-list">
+                        <li>Chord progression</li>
+                        <li>Instrument selection</li>
+                        <li>Arrangement structure</li>
+                    </ul>
+                    <a href="#inquiry" class="service-cta">INQUIRE →</a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-number">03</div>
+                    <h3 class="service-title">
+                        <span class="service-title-en">FULL PRODUCTION</span>
+                        <span class="service-title-zh">全製作</span>
+                    </h3>
+                    <p class="service-description">
+                        從 demo 到成品，全程陪你把作品做完。包含編曲、錄音指導、混音、母帶處理。
+                    </p>
+                    <ul class="service-list">
+                        <li>Pre-production</li>
+                        <li>Arrangement + Mixing</li>
+                        <li>Mastering</li>
+                    </ul>
+                    <a href="#inquiry" class="service-cta">INQUIRE →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section (Producer only) -->
+    <section id="process" class="process" data-show="producer">
+        <div class="container">
+            <h2 class="section-title section-title-bilingual" data-aos="fade-up">
+                <span class="title-en">PROCESS</span>
+                <span class="title-zh">— 合作流程</span>
+            </h2>
+            
+            <div class="process-timeline">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">01</div>
+                    <h4 class="process-title">需求討論</h4>
+                    <p class="process-desc">聊聊你的作品、風格、預算，確認方向</p>
+                </div>
+                <div class="process-connector" data-aos="fade-in" data-aos-delay="150"></div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-number">02</div>
+                    <h4 class="process-title">參考曲目</h4>
+                    <p class="process-desc">提供 2-3 首 reference，確認聲響方向</p>
+                </div>
+                <div class="process-connector" data-aos="fade-in" data-aos-delay="250"></div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-number">03</div>
+                    <h4 class="process-title">初稿交付</h4>
+                    <p class="process-desc">3-7 個工作天內交第一版，含版本筆記</p>
+                </div>
+                <div class="process-connector" data-aos="fade-in" data-aos-delay="350"></div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-number">04</div>
+                    <h4 class="process-title">修改調整</h4>
+                    <p class="process-desc">2 輪修改內含，細節可一起討論</p>
+                </div>
+                <div class="process-connector" data-aos="fade-in" data-aos-delay="450"></div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+                    <div class="process-number">05</div>
+                    <h4 class="process-title">完稿交付</h4>
+                    <p class="process-desc">WAV + stems + 版權文件，完整交付</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sound Samples Section (Producer only) -->
+    <section id="samples" class="samples" data-show="producer">
+        <div class="container">
+            <h2 class="section-title section-title-bilingual" data-aos="fade-up">
+                <span class="title-en">SOUND SAMPLES</span>
+                <span class="title-zh">— 拆解一首自己的歌</span>
+            </h2>
+            
+            <p class="samples-intro" data-aos="fade-up" data-aos-delay="100">
+                以下是我自己的一首作品，從原始人聲到完成版本的拆解。<br>
+                讓你聽聽看每一步製作帶來的改變。
+            </p>
+            
+            <div class="sample-player" data-aos="fade-up" data-aos-delay="200">
+                <div class="sample-header">
+                    <h3 class="sample-song-title">VERE — [Untitled]</h3>
+                    <span class="sample-song-meta">2024 · self-produced</span>
+                </div>
+                
+                <div class="sample-tracks">
+                    <div class="sample-track" data-track="raw">
+                        <button class="track-play" aria-label="Play Raw Vocal">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="icon-play"><path d="M8 5v14l11-7z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="icon-pause"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        </button>
+                        <div class="track-info">
+                            <div class="track-name">
+                                <span class="track-label">01</span>
+                                <span class="track-title">Raw Vocal</span>
+                                <span class="track-sublabel">人聲原檔</span>
+                            </div>
+                            <div class="track-progress">
+                                <div class="track-progress-bar"></div>
+                                <div class="track-progress-fill"></div>
+                            </div>
+                            <div class="track-time">
+                                <span class="track-current">0:00</span>
+                                <span class="track-duration">0:45</span>
+                            </div>
+                        </div>
+                        <audio preload="none" data-src="audio/sample-raw.mp3"></audio>
+                    </div>
+                    
+                    <div class="sample-track" data-track="arrangement">
+                        <button class="track-play" aria-label="Play Arrangement">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="icon-play"><path d="M8 5v14l11-7z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="icon-pause"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        </button>
+                        <div class="track-info">
+                            <div class="track-name">
+                                <span class="track-label">02</span>
+                                <span class="track-title">Arrangement</span>
+                                <span class="track-sublabel">加入編曲</span>
+                            </div>
+                            <div class="track-progress">
+                                <div class="track-progress-bar"></div>
+                                <div class="track-progress-fill"></div>
+                            </div>
+                            <div class="track-time">
+                                <span class="track-current">0:00</span>
+                                <span class="track-duration">0:45</span>
+                            </div>
+                        </div>
+                        <audio preload="none" data-src="audio/sample-arrangement.mp3"></audio>
+                    </div>
+                    
+                    <div class="sample-track" data-track="mix">
+                        <button class="track-play" aria-label="Play Mix">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="icon-play"><path d="M8 5v14l11-7z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="icon-pause"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        </button>
+                        <div class="track-info">
+                            <div class="track-name">
+                                <span class="track-label">03</span>
+                                <span class="track-title">Mix</span>
+                                <span class="track-sublabel">混音後</span>
+                            </div>
+                            <div class="track-progress">
+                                <div class="track-progress-bar"></div>
+                                <div class="track-progress-fill"></div>
+                            </div>
+                            <div class="track-time">
+                                <span class="track-current">0:00</span>
+                                <span class="track-duration">0:45</span>
+                            </div>
+                        </div>
+                        <audio preload="none" data-src="audio/sample-mix.mp3"></audio>
+                    </div>
+                    
+                    <div class="sample-track" data-track="master">
+                        <button class="track-play" aria-label="Play Master">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="icon-play"><path d="M8 5v14l11-7z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="icon-pause"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        </button>
+                        <div class="track-info">
+                            <div class="track-name">
+                                <span class="track-label">04</span>
+                                <span class="track-title">Master</span>
+                                <span class="track-sublabel">母帶完成</span>
+                            </div>
+                            <div class="track-progress">
+                                <div class="track-progress-bar"></div>
+                                <div class="track-progress-fill"></div>
+                            </div>
+                            <div class="track-time">
+                                <span class="track-current">0:00</span>
+                                <span class="track-duration">0:45</span>
+                            </div>
+                        </div>
+                        <audio preload="none" data-src="audio/sample-master.mp3"></audio>
+                    </div>
+                </div>
+                
+                <p class="sample-note">
+                    * 音檔為 demo，實際成品依合作內容調整
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================ -->
+    <!-- SHARED SECTIONS                                   -->
+    <!-- ================================================ -->
+
+    <!-- Contact Section (Artist mode version) -->
+    <section id="contact" class="contact" data-show="artist">
+        <div class="container">
+            <h2 class="section-title section-title-bilingual" data-aos="fade-up">
+                <span class="title-en">KEEP IN TOUCH</span>
+                <span class="title-zh">— 保持聯繫</span>
+            </h2>
             
             <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
-                <a href="mailto:artist@email.com" class="email-link">
+                <a href="mailto:vere9809@gmail.com" class="email-link">
                     vere9809@gmail.com
                 </a>
                 
                 <div class="social-links">
-                    <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                    <a href="https://instagram.com/your_username" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
                     </a>
-                    <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+                    <a href="https://facebook.com/your_page" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                         </svg>
                     </a>
-                    <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">
+                    <a href="https://x.com/your_username" class="social-link" target="_blank" rel="noopener" aria-label="X">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                         </svg>
@@ -253,9 +531,77 @@
         </div>
     </section>
 
+    <!-- Work Inquiry Section (Producer mode contact variant) -->
+    <section id="inquiry" class="inquiry" data-show="producer">
+        <div class="container">
+            <h2 class="section-title section-title-bilingual" data-aos="fade-up">
+                <span class="title-en">WORK INQUIRY</span>
+                <span class="title-zh">— 聊聊你的 project</span>
+            </h2>
+            
+            <p class="inquiry-intro" data-aos="fade-up" data-aos-delay="100">
+                無論你是剛有一段 demo，或是已經有完整的作品，都歡迎聊聊。<br>
+                我會在 48 小時內回覆。
+            </p>
+            
+            <form class="inquiry-form" id="inquiryForm" data-aos="fade-up" data-aos-delay="200">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="inquiry-name">Name / 姓名 <span class="required">*</span></label>
+                        <input type="text" id="inquiry-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry-email">Email <span class="required">*</span></label>
+                        <input type="email" id="inquiry-email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Service / 需求（可複選）</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="service" value="Mixing">
+                            <span>Mixing 混音</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="service" value="Arrangement">
+                            <span>Arrangement 編曲</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="service" value="Full Production">
+                            <span>Full Production 全製作</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="service" value="Other">
+                            <span>Other 其他</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="inquiry-budget">Budget / 預算（選填）</label>
+                    <input type="text" id="inquiry-budget" name="budget" placeholder="e.g. NT$10,000 - 30,000">
+                </div>
+                
+                <div class="form-group">
+                    <label for="inquiry-message">Message / 訊息 <span class="required">*</span></label>
+                    <textarea id="inquiry-message" name="message" rows="5" required placeholder="聊聊你的 project、風格、時程..."></textarea>
+                </div>
+                
+                <button type="submit" class="form-submit">
+                    SEND INQUIRY →
+                </button>
+                
+                <p class="form-note">
+                    * 表單會透過 email 寄送給 VERE。若有緊急需求可直接寄到 <a href="mailto:vere9809@gmail.com">vere9809@gmail.com</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Artist Name. All rights reserved.</p>
+        <p>&copy; 2024 VERE. All rights reserved. · <span class="footer-mode-hint">Currently viewing: <strong class="footer-mode-label">ARTIST</strong> mode</span></p>
     </footer>
 
     <!-- Lightbox for Gallery -->
